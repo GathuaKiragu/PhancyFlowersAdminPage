@@ -16,6 +16,12 @@ module.exports = function(environment) {
         Date: false
       }
     },
+    firebase: {
+      apiKey: "AIzaSyCuDNAbQzdRln4427Y3hKKpj_ZZYA0btZE",
+      authDomain: "phancy-petals.firebaseapp.com",
+      databaseURL: "https://phancy-petals.firebaseio.com",
+      storageBucket: "phancy-petals.appspot.com",
+    },
 
     APP: {
       // Here you can pass flags/options to your application instance
