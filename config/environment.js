@@ -2,6 +2,19 @@
 
 module.exports = function(environment) {
   var ENV = {
+    firebase:'https://phancy-petals.firebaseapp.com',
+    torii: {
+      sessionServiceName: 'session',
+      providers: {
+        'firebase-simple-auth':{
+
+        }
+      }
+    },
+    'ember-simple-auth':{
+      authenticationRoute: 'sessions',
+      routeAfterAuthentication: 'posts',
+    },
     modulePrefix: 'phancy-flowers-admin',
     environment: environment,
     rootURL: '/',
