@@ -1,23 +1,27 @@
-<head>
-  <link rel="shortcut icon" href="http://iflorist.co.za/shop/skin/frontend/ultimo/default/images/logo2_transp.png"/>
+<div class="wrap">
+        <p class="form-title">Admin</p>
+        <h2>Phancy Petals</h2>
+         <div class="container">
+             <div class="row">
+                 <div class="col-sm-6 col-md-4 col-md-offset-4">
+                     <div class="account-wall">
+                         <img class="profile-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8Psx1kCd-CeAT87l-9uyZ4l8fJrM-FCQpI-k4XqSbm1aGj1FoaA"
+                             alt="">
+                         <form class="form-signin">
+                           {{input type="email" placeholder="Username" value=email class="form-control" }}
+                         {{input type="password" placeholder="Password" value=password class="form-control" }}
+                             <button {{action "login"}} class="btn btn-lg btn-primary btn-block">Submit</button>
 
-</head>
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <div class="wrap">
-        <p class="form-title">Sign In</p>
-
-
-        <center>
-           {{input type="text" placeholder="Username" value=email}}<br><br>
-           {{input type="password" placeholder="Password" value=password}}<br><br>
-           <button {{action "login"}} class="btn btn-success btn-sm">Submit</button>
-         </center>
-
-
+                         <label class="checkbox pull-left">
+                             <input type="checkbox" value="remember-me">
+                             Remember me
+                         </label>
+                         <a href="#" class="pull-right need-help">Need help? </a><span class="clearfix"></span>
+                         </form>
+                     </div>
+                     <a href="#" class="text-center new-account">Create an account </a>
+                 </div>
+             </div>
+         </div>
       </div>
-    </div>
-  </div>
   <div class="posted-by">&#0169; Phancy Petals 2017</div>
-</div>
