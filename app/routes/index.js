@@ -14,13 +14,13 @@ export default Ember.Route.extend({
       }).then(function() {
           this.transitionTo('admin');
         }.bind(this));
-      },
+      }
 
 
-      logout: function() {
-      this.get('session').close().then(function() {
-          this.transitionTo('index');
-      }.bind(this));
-    }
+    //   logout: function() {
+    //   this.get('session').close().then(function() {
+    //       this.transitionTo('index');
+    //   }.bind(this));
+    // }
   }
 });

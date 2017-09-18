@@ -9,15 +9,11 @@
         <p class="form-title">Sign In</p>
 
 
-<center>
-        {{#if session.isAuthenticated}}
-           <button {{action 'logout'}}>Logout</button>
-         {{else}}
+        <center>
            {{input type="text" placeholder="Username" value=email}}<br><br>
            {{input type="password" placeholder="Password" value=password}}<br><br>
            <button {{action "login"}} class="btn btn-success btn-sm">Submit</button>
-         {{/if}}
-</center>
+         </center>
 
 
       </div>
