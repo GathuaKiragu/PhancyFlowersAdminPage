@@ -7,7 +7,6 @@ module.exports = function(environment) {
       sessionServiceName: 'session',
       providers: {
         'firebase-simple-auth':{
-
         }
       }
     },

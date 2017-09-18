@@ -1,13 +1,25 @@
+<head>
+  <link rel="shortcut icon" href="http://iflorist.co.za/shop/skin/frontend/ultimo/default/images/logo2_transp.png"/>
+
+</head>
 <div class="container">
   <div class="row">
     <div class="col-md-12">
       <div class="wrap">
         <p class="form-title">Sign In</p>
-        <form class="login" id="form1">
-          {{input type="text" placeholder="Username" }}
-          {{input type="password" placeholder="Password" }}
-          {{input type="submit" value="Sign In" class="btn btn-success btn-sm" }}
-        </form>
+
+
+<center>
+        {{#if session.isAuthenticated}}
+           <button {{action 'logout'}}>Logout</button>
+         {{else}}
+           {{input type="text" placeholder="Username" value=email}}<br><br>
+           {{input type="password" placeholder="Password" value=password}}<br><br>
+           <button {{action "login"}} class="btn btn-success btn-sm">Submit</button>
+         {{/if}}
+</center>
+
+
       </div>
     </div>
   </div>
