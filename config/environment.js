@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    firebase:'https://phancy-petals.firebaseapp.com',
+    firebase:'https://maua-chapchap-2fc5a.firebaseapp.com',
     torii: {
       sessionServiceName: 'session',
       providers: {
@@ -29,10 +29,10 @@ module.exports = function(environment) {
       }
     },
     firebase: {
-      apiKey: "AIzaSyCuDNAbQzdRln4427Y3hKKpj_ZZYA0btZE",
-      authDomain: "phancy-petals.firebaseapp.com",
-      databaseURL: "https://phancy-petals.firebaseio.com",
-      storageBucket: "phancy-petals.appspot.com",
+      apiKey: "AIzaSyAA3A7L7ax6n-_YU61bBiMNFAA0KcOlX90",
+      authDomain: "maua-chapchap-2fc5a.firebaseapp.com",
+      databaseURL: "https://maua-chapchap-2fc5a.firebaseio.com",
+      storageBucket: "maua-chapchap-2fc5a.appspot.com",
     },
 
     APP: {
