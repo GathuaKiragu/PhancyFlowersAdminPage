@@ -12,7 +12,7 @@ module.exports = function(environment) {
     },
     'ember-simple-auth':{
       authenticationRoute: 'sessions',
-      routeAfterAuthentication: 'posts',
+      routeAfterAuthentication: 'admin',
     },
     modulePrefix: 'phancy-flowers-admin',
     environment: environment,
