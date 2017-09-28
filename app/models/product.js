@@ -1,10 +1,11 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-  product_name: DS.attr('string'),
+  pName: DS.attr('string'),
   image: DS.attr('string'),
   description: DS.attr('string'),
   details: DS.attr('string'),
+  category: DS.attr('string'),
   price: DS.attr('number'),
   timestamp: DS.attr('date')
 });

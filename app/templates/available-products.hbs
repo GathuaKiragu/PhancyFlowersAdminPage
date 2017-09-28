@@ -1,0 +1,18 @@
+<table>
+  <tr>
+    <th>Image</th>
+    <th>product name</th>
+    <th>product details</th>
+    <th>Price</th>
+  </tr>
+  {{#each model as |product|}}
+  <tr>
+    <td>. <img src="{{product.image}}" width="40px" height="40px"></td>
+    <td><b>{{product.pName}}</b></td>
+    <td>{{product.description}}</td>
+    <td><b>Ksh :</b> {{product.price}}</td>
+  </tr>
+  {{/each}}
+
+
+</table>

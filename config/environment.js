@@ -1,19 +1,7 @@
-/* eslint-env node */
+/* jshint node: true */
 
 module.exports = function(environment) {
   var ENV = {
-    firebase:'https://maua-chapchap-2fc5a.firebaseapp.com',
-    torii: {
-      sessionServiceName: 'session',
-      providers: {
-        'firebase-simple-auth':{
-        }
-      }
-    },
-    'ember-simple-auth':{
-      authenticationRoute: 'sessions',
-      routeAfterAuthentication: 'admin',
-    },
     modulePrefix: 'phancy-flowers-admin',
     environment: environment,
     rootURL: '/',

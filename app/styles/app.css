@@ -653,3 +653,39 @@ body {
 
 
 /*End of Dashboard styling*/
+
+/*table styles*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+    counter-reset: rowNumber;
+}
+table tr > td:first-child
+{
+    counter-increment: rowNumber;
+}
+
+table tr td:first-child::before
+{
+    content: counter(rowNumber);
+
+}
+
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+
+img{
+  padding: 10px;
+}

@@ -1,26 +1,18 @@
-<center><h2><u>Add Product</u></h2></center>
+<center><h2 color="blue"><u>Add Product</u></h2></center>
 <form>
   <div class="form-group">
     <label for="product_name">Product name <font color="red">*</font></label>
-    {{input type="text" class="form-control" placeholder="Product Name" id="product_name" value=product_name}}
+    {{input type="text" class="form-control" placeholder="Product Name" id="product_name" value=productName}}
   </div>
   <div class="form-group">
     <label for="imageUrl">Image Url <font color="red">*</font></label>
     {{input type="text" class="form-control" id="imageUrl" placeholder="Image" value=image}}
   </div>
+
   <div class="form-group">
-        <label for="sel1">Select Category: <font color="red">*</font></label>
-        <select class="form-control" id="sel1">
-          <option value="anniversary">Anniverrsary</option>
-          <option value="birthday">Birthday Flowers</option>
-          <option value="indoor">Indoor</option>
-          <option value="outdoor">Outdoor</option>
-          <option value="wedding">Wedding</option>
-          <option value="gifts">Gifts</option>
-          <option value="romance">Love and Romance</option>
-        </select>
-        <br>
-</div>
+    <label for="category">Category <font color="red">*</font></label>
+    {{input type="text" class="form-control" id="category" placeholder="Image" value=category}}
+  </div>
   <div class="form-group">
     <label for="description">Product description <font color="red">*</font></label>
     {{input type="text" class="form-control" placeholder="Description" id="description" value=description}}
@@ -33,5 +25,5 @@
     <label for="price">Price<font color="red">*</font></label>
     {{input type="number" class="form-control" placeholder="Product Name" id="price" value=price}}
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button {{action 'saveProduct'}} class="btn btn-primary">Submit</button>
 </form>
